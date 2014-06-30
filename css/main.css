@@ -1,0 +1,122 @@
+* {
+    margin:0;
+    padding:0;
+}
+@font-face {
+    font-family: Yanone Kaffeesatz;
+    src: url("../images/YanoneKaffeesatz-Regular.ttf");
+}
+body {
+    font-family: Yanone Kaffeesatz, sans-serif;
+    background: url(../images/bg.png);
+    background-color: #EEE;
+    padding: 0;
+    width:100%;
+}
+.container {
+    width: 500px;
+}
+h1 {
+    text-align: center;
+}
+p {
+    padding: 20px;
+}
+.axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.x.axis path {
+    display: none;
+}
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+span.company {
+    background-color: #4DAA88;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+
+    margin:10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.remove {
+    cursor: pointer;
+    background-color: #3F8B70;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.remove:after {
+    margin-left: 10px;
+    content:"X";
+    font-weight: bold;
+}
+input {
+    border: none;
+    border-bottom: 1px solid gray;
+    display: inline-block;
+    background-color: rgba(250, 250, 250, 0.0);
+}
+input[type=range] {
+    width:200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.add {
+    color: lightgray;
+    font-size: 20px;
+    font-weight: bold;
+}
+.add:hover {
+    color: gray;
+    cursor: pointer;
+}
+#quotes {
+    top: 0px;
+    left:0px;
+    position: absolute;
+    z-index: -1;
+}
+.quote_profile {
+    margin-bottom:20px;
+    background-color: #FFF;
+    overflow: hidden;
+    width:300px;
+    height:180px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+#quote_content {
+    padding: 10px;
+    margin: 10px;
+}
+#refresh {
+    position: absolute;
+    margin-top: -73px;
+    margin-left: 27px;
+}
+#spin {
+    position: absolute;
+    margin-top: -73px;
+    margin-left: 27px;
+}
+#slider_gui {
+    text-align: center;
+    margin-top: -100px;
+}
+#companies{
+
+}
+.company_keeper {
+
+}
